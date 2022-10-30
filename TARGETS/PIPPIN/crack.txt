@@ -1,0 +1,53 @@
+hashcat (v6.2.5) starting
+
+OpenCL API (OpenCL 2.0 pocl 1.8  Linux, None+Asserts, RELOC, LLVM 11.1.0, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=====================================================================================================================================
+* Device #1: pthread-Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz, 31055/62175 MB (8192 MB allocatable), 12MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+* Slow-Hash-SIMD-LOOP
+* Uses-64-Bit
+
+Watchdog: Temperature abort trigger set to 90c
+
+Host memory required for this attack: 3 MB
+
+Dictionary cache hit:
+* Filename..: rockpippin.txt
+* Passwords.: 480595
+* Bytes.....: 4822831
+* Keyspace..: 480595
+
+Approaching final keyspace - workload adjusted.           
+
+Session..........: hashcat                                
+Status...........: Exhausted
+Hash.Mode........: 12100 (PBKDF2-HMAC-SHA512)
+Hash.Target......: sha512:30000:7zMbdjXKrFDDq4CRF5q9ow==:49ImFWdWRVz2d...1GNg==
+Time.Started.....: Tue Oct 25 13:23:58 2022 (12 mins, 29 secs)
+Time.Estimated...: Tue Oct 25 13:36:27 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (rockpippin.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:      642 H/s (264.39ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 480595/480595 (100.00%)
+Rejected.........: 0/480595 (0.00%)
+Restore.Point....: 480595/480595 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:29696-29999
+Candidate.Engine.: Device Generator
+Candidates.#1....: p00t@ng -> p a t h i e
+Hardware.Mon.#1..: Temp: 58c Util: 97%
+
+Started: Tue Oct 25 13:23:54 2022
+Stopped: Tue Oct 25 13:36:28 2022
